@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * Describe how you could use a single array to implement three stacks.
+ * Find Minimum Element in a Stack
  * 
  * @author sabiya
  *
@@ -14,17 +14,14 @@ public class MinimumElementStack {
 
 	@Test
 	public void test() {
+		int [] inputs = {2,3,4,5,6,7,8,9,1};
 		MinimumelementInStack stack = new MinimumelementInStack();
-		stack.push(5);
-		System.out.println("Minimum :" + stack.minimum());
-		stack.push(3);
-		System.out.println("Minimum :" + stack.minimum());
-		stack.push(4);
-		System.out.println("Minimum :" + stack.minimum());
-		stack.push(2);
+		for (int i=0; i <inputs.length; i++) {
+			stack.push(inputs[i]);
+		}
 		System.out.println("Minimum :" + stack.minimum());
 		stack.pop();
-		stack.pop();
+		System.out.println("Minimum :" + stack.minimum());
 		stack.pop();
 		System.out.println("Minimum :" + stack.minimum());
 	}
