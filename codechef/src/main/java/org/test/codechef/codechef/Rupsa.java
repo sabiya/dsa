@@ -36,12 +36,12 @@ public class Rupsa {
 				
 			} 
 		else {
-			    lo
-				gameScore()
+//			    lo
+//				gameScore()
 			}
 				score = score + A[i] * A[i-1];
-			}
 		
 		System.out.println(score);
 		return score;
 	}
+}
